@@ -39,7 +39,10 @@ button {
   text-align: center;
   line-height: 0.6em;
   padding-bottom: 30px;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-animation-duration: 2s;
+  -etc-animation-duration: 2s;
+  -moz-animation-duration: 2s; }
 
 .button {
   display: block;
@@ -52,7 +55,10 @@ button {
   font-size: 1.8em;
   text-align: center;
   margin: 0 auto;
-  font-weight: bold; }
+  font-weight: bold;
+  -webkit-animation-duration: 3s;
+  -etc-animation-duration: 3s;
+  -moz-animation-duration: 3s; }
   .button:hover, .button:focus, .button:active {
     color: #fff;
     text-decoration: none;
@@ -65,6 +71,14 @@ button {
   bottom: 15px;
   left: 0;
   right: 0; }
+
+.an-ex, .js-array, .example-h1, #can, #run, .result-area, #ez-to-use, .git, .download, .link-example, #or {
+  opacity: 0; }
+
+#can {
+  -webkit-animation-duration: 3s;
+  -etc-animation-duration: 3s;
+  -moz-animation-duration: 3s; }
 
 .example {
   height: 100vh;
