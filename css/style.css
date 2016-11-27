@@ -1,0 +1,402 @@
+body {
+  font-family: 'Open Sans';
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  transition: all  ease 0.25s; }
+
+button {
+  outline: none !important; }
+
+@font-face {
+  font-family: Hello Stockholm;
+  src: url(HelloStockholm-Regular.ttf); }
+
+.main-content {
+  position: relative;
+  height: 100vh;
+  background: rgba(26, 188, 156, 0.45) url(../img/pixambo-architecture00165-575147a9db0bb.png);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
+.main-wrap {
+  position: absolute;
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -190px;
+  left: 0;
+  right: 0; }
+
+.logo {
+  display: block;
+  font-family: 'Hello Stockholm';
+  color: #fff;
+  font-size: 30em;
+  margin: 0;
+  text-align: center;
+  line-height: 0.6em;
+  padding-bottom: 30px;
+  cursor: pointer; }
+
+.button {
+  display: block;
+  border-radius: 26px;
+  color: #fff;
+  border: 3.41667px solid white;
+  max-width: 178px;
+  height: 52px;
+  padding: 10px 27px;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold; }
+  .button:hover, .button:focus, .button:active {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer; }
+
+.mouse-scroll {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0; }
+
+.example {
+  height: 100vh;
+  background-image: url("../img/2-layers.png"); }
+  .example .p-css {
+    font-size: 3.5em;
+    position: relative;
+    top: 22px;
+    left: 30px;
+    color: #455a64; }
+
+.example-h1 {
+  color: #34495e;
+  font-family: 'Open Sans';
+  padding-top: 35px;
+  padding-bottom: 56px;
+  font-size: 4.8em;
+  font-weight: 700;
+  max-width: 300px; }
+
+.js-array {
+  float: right;
+  background-color: #e67e22;
+  border-radius: 14px;
+  max-width: 617px;
+  margin-top: 174px;
+  margin-right: 20px;
+  box-shadow: 0 6px 0 #d35400; }
+  .js-array > p {
+    font-size: 1.84em;
+    padding: 6px 10px; }
+
+.color-var {
+  color: #9b59b6; }
+
+.left-view {
+  float: left; }
+
+.result h1 {
+  color: #34495e;
+  padding-top: 100px;
+  font-size: 4.15em;
+  float: left; }
+
+.result i {
+  font-size: 0.8em; }
+
+.result button {
+  display: block;
+  float: left;
+  background-color: #455a64;
+  width: 108px;
+  padding: 3px;
+  border-radius: 20px;
+  box-shadow: 0 4px 0 #263238;
+  border: none;
+  margin-top: 123px;
+  margin-left: 45px;
+  font-size: 2.5em;
+  color: #95A5A6;
+  padding-bottom: 5px; }
+
+.result-area {
+  display: block;
+  max-width: 599px;
+  height: 252px;
+  background-color: #424242;
+  border-radius: 17px;
+  margin: 0px auto;
+  margin-top: 5.5%; }
+  .result-area > p {
+    font-size: 2em;
+    padding: 15px 20px;
+    color: #e67e22; }
+
+.r-res {
+  float: right; }
+
+.r-les {
+  float: left; }
+
+.use {
+  background-image: url("../img/bg-f.png");
+  height: 100%;
+  background-size: cover; }
+  .use .how-to-use {
+    margin-top: -80px; }
+    .use .how-to-use > h1 {
+      color: #fff;
+      font-size: 10em;
+      float: left;
+      padding-left: 100px;
+      line-height: 220px; }
+  .use .git {
+    max-width: 200px;
+    margin-left: 110px;
+    margin-top: -20px; }
+  .use img {
+    max-width: 100%;
+    padding-top: 50px;
+    float: left; }
+  .use .download {
+    width: 300px;
+    color: #34495e;
+    font-size: 4em;
+    background-color: #10bbb6;
+    border: none;
+    margin-top: 100px;
+    float: right;
+    padding: 10px;
+    box-shadow: 0 5px 0 #088783;
+    background-image: url("../img/bg-button.png");
+    background-size: cover;
+    border-radius: 17px;
+    padding-bottom: 13px; }
+    .use .download:active {
+      transform: translateY(5px);
+      box-shadow: none; }
+
+.link-example {
+  display: block;
+  position: absolute;
+  background-color: #424242;
+  max-width: 480px;
+  height: auto;
+  border-radius: 17px;
+  margin: 50px auto;
+  left: 0;
+  right: 0; }
+  .link-example p {
+    font-size: 2.5em;
+    color: #e67e22; }
+
+@media screen and (max-width: 1200px) {
+  .use .how-to-use > h1 {
+    color: #fff;
+    font-size: 10em;
+    float: left;
+    padding-left: 50px;
+    line-height: 220px; }
+  .use .git {
+    max-width: 180px;
+    margin-left: 50px;
+    margin-top: -20px; }
+  .use img {
+    max-width: 100%;
+    padding-top: 50px;
+    float: left; }
+  .use .download {
+    font-size: 4em;
+    margin-top: 100px;
+    float: right;
+    padding: 10px;
+    border-radius: 17px;
+    padding-bottom: 13px;
+    width: 250px; }
+  .example {
+    height: 100%; }
+  .result-area {
+    margin-top: 4%; }
+  .mouse-icon {
+    display: none !important; } }
+
+@media screen and (max-width: 993px) {
+  .use .how-to-use > h1 {
+    color: #fff;
+    font-size: 7em;
+    float: left;
+    padding-left: 20px;
+    line-height: 170px; }
+  .use .git {
+    max-width: 150px;
+    margin-left: 20px;
+    margin-top: -20px; }
+  .use img {
+    max-width: 50%;
+    padding-top: 50px;
+    float: left; }
+  .use .download {
+    font-size: 3em;
+    margin-top: 80px;
+    float: right;
+    padding: 10px;
+    border-radius: 17px;
+    padding-bottom: 13px;
+    width: 200px; }
+  .result button {
+    margin-top: 43px; }
+  .main-wrap {
+    margin-top: -160px; }
+  .js-array {
+    float: none;
+    display: block;
+    background-color: #e67e22;
+    border-radius: 14px;
+    max-width: 617px;
+    margin-top: 375px; }
+  .result > h1 {
+    color: #34495e;
+    padding-top: 20px;
+    font-size: 4.15em; } }
+
+@media screen and (max-width: 750px) {
+  .use .how-to-use > h1 {
+    color: #fff;
+    font-size: 7em;
+    float: left;
+    padding-left: 6%;
+    line-height: 170px; }
+  .use .git {
+    max-width: 125px;
+    margin-left: 20px;
+    margin-top: -20px; }
+  .use img {
+    max-width: 25%;
+    padding-top: 50px;
+    float: left; }
+  .use .download {
+    font-size: 3em;
+    margin-top: 80px;
+    float: right;
+    padding: 10px;
+    border-radius: 17px;
+    padding-bottom: 13px;
+    width: 200px; }
+  .result button {
+    margin-top: 45px;
+    margin-left: 15px; } }
+
+@media screen and (max-width: 719px) {
+  .use .how-to-use > h1 {
+    color: #fff;
+    font-size: 7em;
+    float: left;
+    padding-left: 3%;
+    line-height: 170px; }
+  .use .git {
+    max-width: 125px;
+    margin-left: 20px;
+    margin-top: -20px; }
+  .use img {
+    max-width: 25%;
+    padding-top: 50px;
+    float: left; }
+  .use .download {
+    font-size: 3em;
+    margin-top: 80px;
+    float: right;
+    padding: 10px;
+    border-radius: 17px;
+    padding-bottom: 13px;
+    width: 200px; }
+  .result button {
+    margin-top: 5px;
+    margin-left: 0; } }
+
+@media screen and (max-width: 624px) {
+  .use .how-to-use > h1 {
+    color: #fff;
+    font-size: 7em;
+    float: left;
+    padding-left: 3%;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    float: none; }
+  .use .git {
+    max-width: 125px;
+    margin-left: 20px;
+    margin-top: -20px;
+    display: block;
+    float: none;
+    margin: 0 auto; }
+  .use img {
+    max-width: 65%;
+    display: block;
+    padding-top: 20px;
+    float: none;
+    margin: 0 auto; }
+  .use .download {
+    font-size: 3em;
+    margin-top: 80px;
+    padding: 10px;
+    border-radius: 17px;
+    padding-bottom: 13px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    margin-top: 30px; }
+  .main-wrap {
+    margin-top: -165px; }
+  .r-res, .r-les {
+    float: left;
+    width: 100%;
+    margin: 0; }
+  .result-area {
+    display: block;
+    max-width: 350px;
+    height: 450px;
+    background-color: #424242;
+    border-radius: 17px;
+    margin: 0px auto;
+    margin-top: 7.5%;
+    margin-bottom: 25px;
+    position: relative; }
+    .result-area > p {
+      text-align: center; } }
+
+@media screen and (max-width: 580px) {
+  .main-wrap {
+    margin-top: -150px; }
+  .logo {
+    font-size: 25em; }
+  .example .p-css {
+    left: 15px; } }
+
+@media screen and (max-width: 495px) {
+  .logo {
+    font-size: 19em; } }
+
+@media screen and (max-width: 320px) {
+  .result-area > p {
+    font-size: 1.9em; }
+  .logo {
+    font-size: 15em; }
+  .js-array {
+    float: none;
+    display: block;
+    background-color: #e67e22;
+    border-radius: 14px;
+    max-width: 617px;
+    margin-top: 425px; }
+  .example .p-css {
+    top: 0px; } }

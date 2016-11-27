@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Correlation Js</title>
+
+  <!-- Bootstrap -->
+  <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/opensans.css">
+  <link rel="stylesheet" href="css/mouse-style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.fullpage.css">
+</head>
+<body>
+<section id="fullpage">
+    <section class="main-content section"> 
+      <div class="main-wrap">
+        <h1 class="logo">Correlation Js</h1>
+        <a data-anchor="2rdPage" class="button" href="#2rdPage">How to use</a>
+      </div>
+    
+    <a data-anchor="2rdPage" href="#2rdPage"><div class="mouse-icon mouse-scroll"><div class="wheel"></div></div></a>
+  </section> 
+  <section data-anchor="2rdPage" class="example section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12">
+          <div class="left-view ">
+            <h1 class="example-h1">For example</h1>
+            <div style="border-left:4px solid #2c3e50;height:160px; margin-left: 4px; float: left;"></div>
+            <p class="p-css">We have a simple <br>
+              JavaScript  array</p>
+            </div>
+            <div class="js-array ">
+              <p><span class="color-var">var</span> jurnal = [{events: [”event-1”, ”event-2” ”event-3”], count = true}, <br>
+                {events: [”event-4”, ”event-2”, ”event-6”], count = true}, <br>
+                {events: [”event-7”, ”event-8”, ”event-9”], count = false},<br>
+                {events: [”event-12”, ”event-10”, ”event-2”], count = true},<br>
+                {events: [”event-15”, ”event-11”, ”event-13”], count = false}];</p>
+              </div>
+            </div>
+            <div class="result col-sm-12 col-xs-12">
+              <h1>And can calculate correlation</h1>
+              <button id="run">run <i class="fa fa-play" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+              <div class="result-area">
+                <p style="white-space:pre" class="r-les">
+                </p>
+                <p style="white-space:pre" class="r-res">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="use section">
+        <div class="container">
+          <div class="how-to-use">
+            <img src="img/use.png" alt="">
+            <img class="git" src="img/github.svg" style="cursor: pointer;" alt="">
+            <h1>or</h1>
+            <button class="download">Download</button>
+          </div>
+        </div>
+        <div class="link-example col-md-12">
+              <p>&lt;script src="js/correlation.js"&gt;&lt;/script&gt;</p>
+            </div>
+      </section>
+      </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.fullpage.js"></script>
+    <script>
+      $('#fullpage').fullpage({
+         scrollingSpeed: '900',
+         anchors: ['Page', '2rdPage']
+      });
+    </script>
+    <script src="js/typed.min.js"></script>
+  <script>
+    $('#run').click(function(){
+        $(".r-les").typed({
+            strings: [" => event-1: 0.25\n => event-2: 0.5\n => event-3: 0.25\n => event-4: 0.25\n => event-5: -0.5\n => event-6: 0.25\n => event-7: -0.5\n => event-8: -0.5\n"],
+            typeSpeed: 0
+        });
+    });
+    $('#run').click(function(){
+        $(".r-res").typed({
+            strings: [" => event-9: -0.5\n => event-10: 0.25\n => event-11: -0.5\n => event-12: 0.25\n => event-13: -0.5\n => event-14: 0.25"],
+            typeSpeed: 0
+        });
+    });
+  </script>
+  </body>
+  </html>
